@@ -42,7 +42,7 @@ fi
 echo "saving the current updatevrquin"
 mv /home/pi/updatevrquin /home/pi/updatevrquin.prev
 
-git clone https://github.com/Debaprasadjena1997/updatevrquin.git
+git clone https://github.com/Debaprasadjena1997/updatevrquin-p.git
 # git clone https://github.com/GramThanos/captive-portal.git
 
 echo "get the new server release file"
@@ -120,5 +120,5 @@ sync
 rm /home/pi/piSignagePro/misc/install.sh /home/pi/piSignagePro/misc/autostart
 
 echo "Rebooting after the update"
-sudo python /home/pi/updatevrquin/vrquin.py
+sudo python /home/pi/updatevrquin-p/vrquin.py
 sudo reboot
