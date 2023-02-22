@@ -35,12 +35,12 @@ echo "check .problem directory"
 if [ -d "/home/pi/piSignagePro.problem" ]; then
 	sudo rm -rf  /home/pi/piSignagePro.problem
 fi
-echo "deleting updatevrquin.prev directory if exists"
-if [ -d "/home/pi/updatevrquin.prev" ]; then
-    sudo rm -rf  /home/pi/updatevrquin.prev
+echo "deleting updatevrquin-p.prev directory if exists"
+if [ -d "/home/pi/updatevrquin-p.prev" ]; then
+    sudo rm -rf  /home/pi/updatevrquin-p.prev
 fi
-echo "saving the current updatevrquin"
-mv /home/pi/updatevrquin /home/pi/updatevrquin.prev
+echo "saving the current updatevrquin-p"
+mv /home/pi/updatevrquin /home/pi/updatevrquin-p.prev
 
 git clone https://github.com/Debaprasadjena1997/updatevrquin-p.git
 # git clone https://github.com/GramThanos/captive-portal.git
